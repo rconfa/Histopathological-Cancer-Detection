@@ -32,7 +32,16 @@ Anyway if you have any problem just contact me for further information!
 
 
 # Results Table
+Comparative result of models based on simulated test set created in advance:
 
+| Architectures | Accuracy | Precision | Recall | F1-score | AUC-ROC |
+| ----- | ----------- | ------------ | -------------- | --------------- | --------------- |
+| VGG16 | 0.73 | 0.74 | 0.73 | 0.73 | 0.73 |
+| DenseNet-201 | 0.79 | 0.79 | 0.79 | 0.79 | 0.79 |
+| MobileNet-V2 | 0.74 | 0.74 | 0.74 | 0.74 | 0.74 |
+| scratch | 0.93 | 0.93 | 0.93 | 0.93 | **0.931** |
+
+By using the model from scrach with [Kaggle test set](https://www.kaggle.com/c/histopathologic-cancer-detection/data?select=test) we achive 0.885 as AUC.
 
 # References
 [1] V. Messina and S. Bianco, “Dispense e slide del corso advanced machine learning,” 2021. <br>
