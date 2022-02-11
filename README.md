@@ -24,6 +24,11 @@ The original dataset has more than 220K RGB images with a dimension of 96x96x3. 
 
 
 # References
+[1] V. Messina and S. Bianco, “Dispense e slide del corso advanced machine learning,” 2021. <br>
+[2] PCCam, “Histopathologic cancer detection,” 2019. <br>
+[3] K.-S. Lee, S.-H. Son, S.-H. Park, and E. Kim, “Automated detection of colorectal tumors based on artificial intelligence”. <br>
+[4] PCCam, “Histopathologic cancer detection,” 2019. [Online]. Available: https://www.kaggle.com/c/histopathologic-cancer-detection/data. 
+
 
 # About us
 
