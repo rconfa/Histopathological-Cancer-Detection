@@ -6,11 +6,24 @@
 <h2 align="center">Advanced Machine Learning project</h2>
 
 # Histopathological-Cancer-Detection
-Created an algorithm to identify metastatic cancer in small image patches taken from larger digital pathology scans. The data used for this competition is a slightly modified version of the PatchCamelyon (PCam) benchmark dataset. The original PCam dataset contains duplicate images due to its probabilistic sampling, however, the version presented on [Kaggle](https://www.kaggle.com/c/histopathologic-cancer-detection/data) does not contain duplicates.
+Created an algorithm to identify metastatic cancer in small image patches taken from larger digital pathology scans. The data used for this competition is a slightly modified version of the PatchCamelyon (PCam) benchmark dataset. The original PCam dataset contains duplicate images due to its probabilistic sampling, however, the version presented on Kaggle does not contain duplicates.
 
-# Overview 
+# Motivation 
+
+# Data
+The data are taken from a Kaggle challenge published in 2018 and they can be downloaded [here](https://www.kaggle.com/c/histopathologic-cancer-detection/data). For the project two subset has been created in order to speed up the learning process and create nested folder for appropriately using keras import method. Due to their size it is impossible to upload them in Github but feel free to contact me if you need them. <br>
+The original dataset has more than 220K RGB images with a dimension of 96x96x3. The given problem is the binary classification problem where the associated label has two class labels i.e. tumor and non-tumor tissues. A positive label indicates that the center 32x32px region of a patch contains at least one pixel of tumor tissue. No information is given for the outside region.
+
+# Notebook 
+
+* [<b>1_ResizingTrainingData</b>](https://github.com/rconfa/Histopathological-Cancer-Detection/blob/main/Notebook/1_ResizingTrainingData.ipynb): load the data and creates a balanced subset of them. You can set the desidered size by changing the parameter `n_samples`. Moreover the data will be saved in different folder for splitting tumor and non-tumor images.
+* [<b>2_HistopathologicCancerDetection_FineTuning</b>](https://github.com/rconfa/Histopathological-Cancer-Detection/blob/main/Notebook/2_HistopathologicCancerDetection_FineTuning.ipynb): contains the developed code for three different fine-tuning architecture (VGG16, DenseNet-201, MobileNet-V2. It also contains the tuning of the related hyperparameters.
+* [<b>3_HistopathologicCancerDetection_ModelFromScratch</b>](https://github.com/rconfa/Histopathological-Cancer-Detection/blob/main/Notebook/3_HistopathologicCancerDetection_ModelFromScratch.ipynb): contains the developed code for a convolutional neural network from scratch. Contains several versions of this CNN and hyperparameter optimization. 
+
+# Results Table
 
 
+# References
 
 # About us
 
